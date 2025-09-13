@@ -11,7 +11,7 @@ function App() {
   const yourTagline = "Exploring Solana";
 
   // Placeholder for your profile image and resume
-  const profilePic = "/imgimg.jpeg";
+  const profilePic = "/img.png";
   const resumePath = ""; // Add the URL to your resume PDF here.
 
   const handleDownloadResume = () => {
@@ -43,13 +43,13 @@ function App() {
       content: (
         <div className="flex flex-col items-center">
           <p className="max-w-xl mx-auto text-sm leading-relaxed">
-      I’m a CS and Business Systems student who loves building things from scratch—whether it’s a web app, 
+      I’m a CS and Business Systems student who loves building things from scratch, whether it’s a web app, 
       a hackathon prototype, or diving into a new blockchain idea. Over the last few years 
       I’ve explored everything from full-stack development to machine learning and web3, 
       picking up a few hackathon wins and research projects along the way.  
       What excites me most is solving real problems with tech and working with people 
       who share the same drive. <br />When I’m not at the laptop, you’ll probably find me 
-      reading up on the latest in blockchain, sketching ideas, or helping juniors get 
+      reading up on the latest in blockchain, sketching, or helping juniors get 
       started.<br />^^
     </p>
           <button
