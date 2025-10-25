@@ -72,11 +72,11 @@ function App() {
         <div className="grid gap-8 max-w-2xl mx-auto">
           <a href="https://github.com/rashcasm/Stellar-Ragnarok/tree/main/Hulk_Hashers" className="border border-neutral-900 p-4 block hover:bg-neutral-200 transition-colors duration-200">
             <div className="flex justify-between items-start mb-2">
-              <h3 className="font-bold text-lg">AidChain</h3>
+              <h3 className="font-bold text-lg">Ekonos</h3>
               <p className="text-sm">2025</p>
             </div>
-            <p className="text-sm mb-2 italic">Flutter, Stellar, Soroban, Rust</p>
-            <p className="text-sm">Developed Stellar-based platform for transparent, low-cost aid disbursements using stablecoins.</p>
+            <p className="text-sm mb-2 italic">Solana, Rust, Anchor, TypeScript</p>
+            <p className="text-sm">Developing a protocol on solana to manage on-chain partnership and co-ownerships of digital and real world assets</p>
           </a>
           <a href="https://github.com/rashcasm/chess-backend" className="border border-neutral-900 p-4 block hover:bg-neutral-200 transition-colors duration-200">
             <div className="flex justify-between items-start mb-2">
@@ -213,10 +213,19 @@ function App() {
         </ul>
       ),
     },
-    community_involvement: {
+    community: {
       heading: "Contributions & Community Involvement",
       content: (
         <ul className="text-sm text-left max-w-xl mx-auto space-y-4">
+          <li className="p-2 border border-neutral-900">
+            <a href="#" className="block hover:bg-neutral-200 transition-colors duration-200">
+              <div className="flex justify-between items-start">
+                <span className="font-bold">Organizer and Instructor, Get On-Chain</span>
+                <span className="text-xs">2025</span>
+              </div>
+              <p className="text-xs mt-1">Guided 80+ participants in blockchain development and smart contract implementation.</p>
+            </a>
+          </li>
           <li className="p-2 border border-neutral-900">
             <a href="#" className="block hover:bg-neutral-200 transition-colors duration-200">
               <div className="flex justify-between items-start">
@@ -242,6 +251,14 @@ function App() {
                 <span className="text-xs">2025</span>
               </div>
               <p className="text-xs mt-1">Delivered a session on AI, its applications, trends, and societal impact, as a part of Vigyan Va Ganit Sanskar Shibir, ViBha.</p>
+            </a>
+          </li>
+          <li className="p-2 border border-neutral-900">
+            <a href="#" className="block hover:bg-neutral-200 transition-colors duration-200">
+              <div className="flex justify-between items-start">
+                <span className="font-bold">Member, VidarbhaDAO</span>
+                <span className="text-xs">2025</span>
+              </div>
             </a>
           </li>
         </ul>
