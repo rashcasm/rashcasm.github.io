@@ -76,7 +76,7 @@ function App() {
               <p className="text-sm">2025</p>
             </div>
             <p className="text-sm mb-2 italic">Solana, Rust, Anchor, TypeScript</p>
-            <p className="text-sm">Developing a protocol on solana to manage on-chain partnership and co-ownerships of digital and real world assets</p>
+            <p className="text-sm">Developed a protocol on solana to manage on-chain partnership and co-ownerships of digital and real world assets (Turbin3.org capstone MVP)</p>
           </a>
           <a href="https://github.com/rashcasm/chess-backend" className="border border-neutral-900 p-4 block hover:bg-neutral-200 transition-colors duration-200">
             <div className="flex justify-between items-start mb-2">
