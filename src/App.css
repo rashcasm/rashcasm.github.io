@@ -1,0 +1,275 @@
+/* GLOBAL RESET & LAYOUT */
+:root {
+  --bg-color: #FDFBF7; /* Cream */
+  --text-color: #1a1a1a;
+  --accent-1: #C4B0FF; /* Lavender */
+  --accent-2: #98FF98; /* Mint */
+  --accent-3: #FFB3BA; /* Pink */
+  --accent-4: #BAE1FF; /* Blue */
+  --border-color: #000000;
+  --shadow: 4px 4px 0px 0px #000000;
+  --font-main: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 2rem;
+}
+
+.profile-pic-container {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background-color: var(--accent-4);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: var(--font-mono);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  word-wrap: break-word; /* Prevents overflow on tiny screens */
+}
+
+.tagline {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  background-color: var(--accent-3);
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid var(--border-color);
+  box-shadow: 3px 3px 0px 0px black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Wraps icons if screen is tiny */
+}
+
+.icon-btn {
+  background: white;
+  border: 2px solid var(--border-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0px 0px black;
+}
+
+.icon-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px 0px var(--accent-1);
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* CRITICAL: Allows buttons to stack on phone */
+}
+
+.nav-btn {
+  font-family: var(--font-mono);
+  background: white;
+  color: black;
+  border: 2px solid var(--border-color);
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px 0px black;
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.nav-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px black;
+}
+
+.nav-btn.active {
+  background-color: var(--accent-4);
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px black;
+}
+
+/* SECTIONS */
+.section-title {
+  font-family: var(--font-mono);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: var(--accent-2);
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border: 2px solid var(--border-color);
+  padding: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: 4px 4px 0px 0px black;
+  text-align: left;
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--accent-1);
+  padding: 4px 8px;
+  border: 1px solid black;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents year from breaking awkwardly */
+}
+
+/* FOOTER */
+footer {
+  margin-top: 4rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* ------------------------------------------------ */
+/* MOBILE RESPONSIVENESS (The Magic Part)           */
+/* ------------------------------------------------ */
+@media (max-width: 600px) {
+  /* Shrink container padding */
+  .container {
+    padding: 20px 15px;
+  }
+
+  /* Shrink the big name */
+  h1 {
+    font-size: 2rem; 
+  }
+
+  /* Stack nav buttons tighter */
+  .nav {
+    gap: 10px;
+  }
+
+  /* Make nav buttons smaller & full width capable if needed */
+  .nav-btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    flex: 1 1 40%; /* Buttons take up roughly half width */
+  }
+
+  /* Adjust Profile Pic Size */
+  .profile-pic-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Fix Card Header Stacking */
+  .card-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card-year {
+    align-self: flex-start; /* Move year below title on very small screens */
+    margin-top: 5px;
+  }
+  
+  /* Make the 'External Link' button in projects align nicely */
+  .card-header > div:last-child {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+  }
+}
