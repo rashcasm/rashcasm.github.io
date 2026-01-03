@@ -1,10 +1,19 @@
 import { useState } from 'react';
-import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram, Coffee, Check } from 'lucide-react';
 import {GitHubCalendar} from 'react-github-calendar';
 import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('about');
+  // REPLACE THIS WITH YOUR ACTUAL SOLANA WALLET ADDRESS
+  const [copied, setCopied] = useState(false);
+  const solanaAddress = "GsJYonU5Kz4MJBHZ5UFx9oyStBpXXswnZcFUorktj2yZ"; 
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(solanaAddress);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+  };
 
   // Custom theme for the calendar to match your pastel look
   const calendarTheme = {
@@ -346,8 +355,25 @@ function App() {
                   <li style={{ marginBottom: '5px' }}>Sleepinn..zzz</li>
                 </ul>
               </div>
+              
             </div>
-
+            <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
+            <button
+              onClick={handleCopy}
+              className="nav-btn" 
+                style={{ 
+                   display: 'flex', 
+                   alignItems: 'center', 
+                   gap: '12px', 
+                   fontSize: '1rem',
+                   padding: '15px 30px',
+                   backgroundColor: copied ? 'var(--accent-2)' : 'white' // Turns Mint Green on success
+                }}
+                >
+              {copied ? <Check size={20} /> : <Coffee size={20} />}
+              {copied ? "Address Copied!" : "Buy me a cryptic coffee"}
+            </button>
+            </div>
           </>
         )}
 
