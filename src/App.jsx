@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram } from 'lucide-react';
 import {GitHubCalendar} from 'react-github-calendar';
 import './App.css';
 
@@ -35,7 +35,7 @@ function App() {
     {
       title: "Frameworks",
       icon: <Layers size={20} />,
-      color: "var(--accent-2)", // Green
+      color: "var(--accent-1)", // Green
       items: ["Anchor", "React", "Node.js", "MERN"]
     },
     {
@@ -223,6 +223,18 @@ function App() {
     }
   ];
 
+  /* GITHUB CALCULATIONS */
+// const selectLastHalfYear = (contributions) => {
+//   const now = new Date();
+//   const sixMonthsAgo = new Date();
+//   sixMonthsAgo.setMonth(now.getMonth() - 6);
+//   return contributions.filter(activity => {
+//     const activityDate = new Date(activity.date);
+//     return activityDate >= sixMonthsAgo && activityDate <= now;
+//   });
+// };
+
+
   return (
     <div className="container">
       {/* HEADER SECTION */}
@@ -237,13 +249,14 @@ function App() {
         
         <h1>RASHMIN CHAUDHARI</h1>
         <div className="tagline">
-          Exploring Rust, Solana, MERN and AI
+          RUST | SOLANA | MERN | AI
         </div>
 
         <div className="socials">
           <a href="https://www.linkedin.com/in/rashminchaudhari" target="_blank" rel="noopener noreferrer" className="icon-btn"><Linkedin size={20} /></a>
           <a href="https://twitter.com/rashcasm" target="_blank" rel="noopener noreferrer" className="icon-btn"><Twitter size={20} /></a>
           <a href="https://github.com/rashcasm" target="_blank" rel="noopener noreferrer" className="icon-btn"><Github size={20} /></a>
+          <a href="https://t.me/rashminc" target="_blank" rel="noopener noreferrer" className="icon-btn"><Send size={20} /></a>
           <a href="mailto:rashmin9c@gmail.com" className="icon-btn"><Mail size={20} /></a>
         </div>
       </header>
@@ -276,8 +289,8 @@ function App() {
               </p>
 
               <p>
-                I’ve studied Rust in depth and graduated from elite blockchain fellowships like
-                <strong> Ackee – School of Solana</strong> and <strong> Turbin3</strong>.
+                I’ve studied Rust and graduated from elite blockchain fellowships like
+                <strong> Ackee – School of Solana</strong> and <strong> Turbin3 Builders</strong> Cohort.
                 I actively build using the <strong>MERN stack</strong> and have an overview of
                 <strong> AI/ML concepts</strong>.
               </p>
@@ -288,6 +301,25 @@ function App() {
               </p>
             </section>
 
+            {/* GITHUB CALENDAR SECTION */}
+            <div className="card" style={{ marginTop: '20px', padding: '20px', textAlign: 'center' }}>
+               <h3 style={{ margin: '0 0 20px 0', fontSize: '1.1rem', fontFamily: 'var(--font-mono)', display:'flex', alignItems:'center', justifyContent:'center', gap:'10px' }}>
+                 <Github size={20} /> Contributions
+               </h3>
+               {/* Wrapper for overflow scrolling on small screens */}
+               <div style={{ width: '100%', overflowX: 'auto', display: 'flex', justifyContent: 'center' }}>
+                  <GitHubCalendar
+                    username="rashcasm"
+                    blockSize={12}
+                    blockMargin={2}
+                    fontSize={14}
+                    blockRadius={5}
+                    theme={calendarTheme}
+                    style={{ color: 'black' }}
+                    showColorLegend={false}
+                  />
+               </div>
+            </div>
             {/* NEW "CURRENT FOCUS" SECTION BENEATH ABOUT */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
               
@@ -316,23 +348,6 @@ function App() {
               </div>
             </div>
 
-            {/* GITHUB CALENDAR SECTION */}
-            <div className="card" style={{ marginTop: '20px', padding: '20px', textAlign: 'center' }}>
-               <h3 style={{ margin: '0 0 20px 0', fontSize: '1.1rem', fontFamily: 'var(--font-mono)', display:'flex', alignItems:'center', justifyContent:'center', gap:'10px' }}>
-                 <Github size={20} /> Contributions
-               </h3>
-               {/* Wrapper for overflow scrolling on small screens */}
-               <div style={{ width: '100%', overflowX: 'auto', display: 'flex', justifyContent: 'center' }}>
-                  <GitHubCalendar
-                    username="rashcasm"
-                    blockSize={13}
-                    blockMargin={5}
-                    fontSize={14}
-                    theme={calendarTheme}
-                    style={{ color: 'black' }}
-                  />
-               </div>
-            </div>
           </>
         )}
 
