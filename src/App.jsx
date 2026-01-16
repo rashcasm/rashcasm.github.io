@@ -262,7 +262,7 @@ function App() {
       <header className="header">
         <div className="profile-pic-container">
           <img 
-            src="/rashmin.jpg"
+            src="/rashnft.png"
             alt="Rashmin Avatar" 
             className="profile-pic"
           />
