@@ -18,7 +18,7 @@ function App() {
   // Custom theme for the calendar to match your pastel look
   const calendarTheme = {
       light: [
-        '#e8e8e8', // Level 0 (Empty) - Light Gray
+        '#e8e8e8', // Level 0 (Empty) - Light Gray22
         '#9F8FEF', // Level 1 - Very Light Lavender
         '#9F8FEF', // Level 2 - Your Main Lavender Accent
         '#7A6DDF', // Level 3 - Medium Purple
@@ -33,6 +33,18 @@ function App() {
       ],
     };
 
+
+    const experiences = [
+    {
+      role: "Software Engineering Intern",
+      company: "Stealth Startup",
+      duration: "Jan 2026 - Present",
+      location: "Remote",
+      details: [
+        "The first rule of it is you don’t talk about it."
+      ]
+    }
+  ];
   // Categorized Skills Data
   const skillsCategories = [
     {
@@ -45,7 +57,7 @@ function App() {
       title: "Frameworks",
       icon: <Layers size={20} />,
       color: "var(--accent-1)", // Green
-      items: ["Anchor", "React", "Node.js", "MERN"]
+      items: ["Anchor", "React", "Node.js", "MERN", "NumPy", "Pandas"]
     },
     {
       title: "Developer Tools",
@@ -272,7 +284,7 @@ function App() {
 
       {/* NAVIGATION */}
       <nav className="nav">
-        {['about', 'stack', 'projects', 'achievements', 'community'].map((tab) => (
+        {['about', 'experience', 'stack', 'projects', 'achievements', 'community'].map((tab) => (
           <button 
             key={tab}
             className={`nav-btn ${activeTab === tab ? 'active' : ''}`}
@@ -330,7 +342,7 @@ function App() {
                </div>
             </div>
             {/* NEW "CURRENT FOCUS" SECTION BENEATH ABOUT */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
+            {/* <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
               
               <div className="card" style={{ marginBottom: 0, flex: '1 1 300px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
@@ -356,7 +368,7 @@ function App() {
                 </ul>
               </div>
               
-            </div>
+            </div> */}
             <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
             <button
               onClick={handleCopy}
@@ -375,6 +387,43 @@ function App() {
             </button>
             </div>
           </>
+        )}
+
+                {/* NEW EXPERIENCE TAB */}
+        {activeTab === 'experience' && (
+          <section>
+            <h2 className="section-title">EXPERIENCE</h2>
+            {experiences.map((exp, index) => (
+              <div key={index} className="card">
+                <div className="card-header">
+                  <div>
+                    <h3 className="card-title" style={{fontSize: '1.3rem'}}>{exp.role}</h3>
+                    <div style={{ 
+                      fontFamily: 'var(--font-mono)', 
+                      fontSize: '0.85rem', 
+                      background: 'var(--accent-2)', 
+                      display: 'inline-block', 
+                      padding: '4px 8px', 
+                      border: '1px solid black', 
+                      marginTop: '6px', 
+                      // fontWeight: 'bold' 
+                    }}>
+                      {exp.company}
+                    </div>
+                  </div>
+                  <div style={{textAlign: 'right'}}>
+                    <span className="card-year">{exp.duration}</span>
+                    <div style={{fontFamily: 'var(--font-mono)', fontSize: '0.8rem', marginTop: '5px', opacity: 0.8}}>{exp.location}</div>
+                  </div>
+                </div>
+                <ul style={{marginTop:'15px', paddingLeft: '20px', fontSize: '0.95rem'}}>
+                  {exp.details.map((point, i) => (
+                    <li key={i} style={{marginBottom: '5px'}}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </section>
         )}
 
         {/* NEW STACK TAB */}
@@ -514,7 +563,7 @@ function App() {
       </main>
 
       <footer>
-        <p>© 2026 Rashmin • Built with React + Vite</p>
+        <p>© 2026 Rashmin</p>
       </footer>
     </div>
   );
