@@ -43,6 +43,15 @@ function App() {
       details: [
         "The first rule of it is you don’t talk about it."
       ]
+    },
+    {
+      role: "Co-Founder",
+      company: "Ekonos",
+      duration: "Oct 2025 - Jan 2026",
+      location: "Remote",
+      details: [
+        "Own your assets in partnership on Solana."
+      ]
     }
   ];
   // Categorized Skills Data
@@ -260,13 +269,13 @@ function App() {
     <div className="container">
       {/* HEADER SECTION */}
       <header className="header">
-        <div className="profile-pic-container">
-          <img 
+       <div className="profile-pic-container">
+           <img 
             src="/rashmin.jpg"
             alt="Rashmin Avatar" 
             className="profile-pic"
           />
-        </div>
+        </div> 
         
         <h1>RASHMIN</h1>
         <div className="tagline">
