@@ -43,6 +43,15 @@ function App() {
       details: [
         "The first rule of it is you don’t talk about it."
       ]
+    },
+    {
+      role: "Co-Founder",
+      company: "Ekonos",
+      duration: "Oct 2025 - Jan 2026",
+      location: "Remote",
+      details: [
+        "Own your assets in partnership on Solana."
+      ]
     }
   ];
   // Categorized Skills Data
