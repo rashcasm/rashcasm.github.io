@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram, Coffee, Check } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram, Coffee, Check, FileText } from 'lucide-react';
 import {GitHubCalendar} from 'react-github-calendar';
 import './App.css';
 
@@ -288,6 +288,7 @@ function App() {
           <a href="https://github.com/rashcasm" target="_blank" rel="noopener noreferrer" className="icon-btn"><Github size={20} /></a>
           <a href="https://t.me/rashminc" target="_blank" rel="noopener noreferrer" className="icon-btn"><Send size={20} /></a>
           <a href="mailto:rashmin9c@gmail.com" className="icon-btn"><Mail size={20} /></a>
+          <a href="/resume.pdf" download="Rashmin_Resume.pdf"  className="icon-btn"><FileText size={20} /></a>
         </div>
       </header>
 
@@ -350,34 +351,6 @@ function App() {
                   />
                </div>
             </div>
-            {/* NEW "CURRENT FOCUS" SECTION BENEATH ABOUT */}
-            {/* <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
-              
-              <div className="card" style={{ marginBottom: 0, flex: '1 1 300px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                  <Zap size={20} color="var(--border-color)" />
-                  <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Learning Now</h3>
-                </div>
-                <ul style={{ paddingLeft: '20px', margin: 0, fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '5px' }}>Rust Lang Book</li>
-                  <li style={{ marginBottom: '5px' }}>Rust Atomics and Locks</li>
-                  <li style={{ marginBottom: '5px' }}>Rust for Rustaceans</li>
-                </ul>
-              </div>
-
-              <div className="card" style={{ marginBottom: 0, flex: '1 1 300px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                  <BookOpen size={20} color="var(--border-color)" />
-                  <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Interests</h3>
-                </div>
-                <ul style={{ paddingLeft: '20px', margin: 0, fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '5px' }}>Philosophies</li>
-                  <li style={{ marginBottom: '5px' }}>Organizing Cool Stuff</li>
-                  <li style={{ marginBottom: '5px' }}>Sleepinn..zzz</li>
-                </ul>
-              </div>
-              
-            </div> */}
             <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
             <button
               onClick={handleCopy}
