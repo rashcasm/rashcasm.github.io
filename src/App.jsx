@@ -63,7 +63,7 @@ function App() {
       items: ["Rust", "Python", "C++", "SQL", "JavaScript", "TypeScript"]
     },
     {
-      title: "Frameworks",
+      title: "Libraries & Frameworks",
       icon: <Layers size={20} />,
       color: "var(--accent-1)", // Green
       items: ["Anchor", "React", "Node.js", "MERN", "NumPy", "Pandas"]
@@ -72,7 +72,7 @@ function App() {
       title: "Developer Tools",
       icon: <Wrench size={20} />,
       color: "var(--accent-3)", // Pink
-      items: ["Git", "VS Code", "Surfpool", "Postman"]
+      items: ["Git", "VS Code", "Surfpool", "Postman", "TradingView"]
     },
     // {
     //   title: "Libraries",
@@ -279,7 +279,7 @@ function App() {
         
         <h1>RASHMIN</h1>
         <div className="tagline">
-          RUST | SOLANA | MERN | AI
+          RUST | SOLANA | MERN | ALGO
         </div>
 
         <div className="socials">
@@ -309,27 +309,17 @@ function App() {
       <main>
         {activeTab === 'about' && (
           <>
-            <section className="card" style={{ textAlign: 'center', padding: '40px' }}>
-              <h2 style={{ marginTop: 0, fontFamily: 'var(--font-mono)' }}>
-                Hi, I’m Rashmin.
-              </h2>
-
+            <section className="card" style={{ textAlign: 'center', padding: '20px' }}>
               <p>
-                I’m a 3rd-year Computer Science & Business Systems student with a strong focus on <strong>Rust,
-                backend development, and Web3.</strong>
+                I’m a 3rd-year Computer Science & Business Systems and 100xDevs student currently working as <strong>Algo Trading Intern</strong> at a stealth startup.
               </p>
-
               <p>
-                I’ve studied Rust and graduated from elite blockchain fellowships like
-                <strong> Ackee – School of Solana</strong> and <strong> Turbin3 Builders</strong> Cohort.
-                I actively build using the <strong>MERN stack</strong> and have an overview of
-                <strong> AI/ML concepts</strong>.
+                I’ve graduated from elite blockchain fellowships like
+                <strong> Ackee – School of Solana</strong> and <strong> Turbin3</strong> Builders Cohort.
+                I ship across the stack - from <strong>MERN</strong> to low-level
+                <strong> Rust</strong>.
               </p>
-
-              <p>
-                I’m also a student at <strong>100xDevs</strong>, learning to build scalable,
-                production-ready systems with a strong backend-first mindset.
-              </p>
+              <p> Learning to build scalable, production-ready systems with a strong backend-first mindset.</p>
             </section>
 
             {/* GITHUB CALENDAR SECTION */}
