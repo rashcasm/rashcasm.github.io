@@ -135,7 +135,7 @@ h1 {
   background: white;
   color: black;
   border: 2px solid var(--border-color);
-  padding: 12px 30px;
+  padding: 10px 20px;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;

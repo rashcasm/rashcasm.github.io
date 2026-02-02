@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram, Coffee, Check } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, Terminal, Database, Cpu, Globe, Code2, ExternalLink, Wrench, Library, Layers, Zap, BookOpen, Send, Instagram, Coffee, Check, FileText } from 'lucide-react';
 import {GitHubCalendar} from 'react-github-calendar';
 import './App.css';
 
@@ -36,7 +36,7 @@ function App() {
 
     const experiences = [
     {
-      role: "Software Engineering Intern",
+      role: "Algo Trading Intern",
       company: "Stealth Startup",
       duration: "Jan 2026 - Present",
       location: "Remote",
@@ -63,7 +63,7 @@ function App() {
       items: ["Rust", "Python", "C++", "SQL", "JavaScript", "TypeScript"]
     },
     {
-      title: "Frameworks",
+      title: "Libraries & Frameworks",
       icon: <Layers size={20} />,
       color: "var(--accent-1)", // Green
       items: ["Anchor", "React", "Node.js", "MERN", "NumPy", "Pandas"]
@@ -72,7 +72,7 @@ function App() {
       title: "Developer Tools",
       icon: <Wrench size={20} />,
       color: "var(--accent-3)", // Pink
-      items: ["Git", "VS Code", "Surfpool", "Postman"]
+      items: ["Git", "VS Code", "Surfpool", "Postman", "TradingView"]
     },
     // {
     //   title: "Libraries",
@@ -269,17 +269,17 @@ function App() {
     <div className="container">
       {/* HEADER SECTION */}
       <header className="header">
-        <div className="profile-pic-container">
-          <img 
+       <div className="profile-pic-container">
+           <img 
             src="/rashmin.jpg"
             alt="Rashmin Avatar" 
             className="profile-pic"
           />
-        </div>
+        </div> 
         
         <h1>RASHMIN</h1>
         <div className="tagline">
-          RUST | SOLANA | MERN | AI
+          RUST | SOLANA | MERN | ALGO
         </div>
 
         <div className="socials">
@@ -288,6 +288,7 @@ function App() {
           <a href="https://github.com/rashcasm" target="_blank" rel="noopener noreferrer" className="icon-btn"><Github size={20} /></a>
           <a href="https://t.me/rashminc" target="_blank" rel="noopener noreferrer" className="icon-btn"><Send size={20} /></a>
           <a href="mailto:rashmin9c@gmail.com" className="icon-btn"><Mail size={20} /></a>
+          <a href="/resume.pdf" download="Rashmin_Resume.pdf"  className="icon-btn"><FileText size={20} /></a>
         </div>
       </header>
 
@@ -308,27 +309,17 @@ function App() {
       <main>
         {activeTab === 'about' && (
           <>
-            <section className="card" style={{ textAlign: 'center', padding: '40px' }}>
-              <h2 style={{ marginTop: 0, fontFamily: 'var(--font-mono)' }}>
-                Hi, I’m Rashmin.
-              </h2>
-
+            <section className="card" style={{ textAlign: 'center', padding: '20px' }}>
               <p>
-                I’m a 3rd-year Computer Science & Business Systems student with a strong focus on <strong>Rust,
-                backend development, and Web3.</strong>
+                I’m a 3rd-year Computer Science & Business Systems and 100xDevs student currently working as <strong>Algo Trading Intern</strong> at a stealth startup.
               </p>
-
               <p>
-                I’ve studied Rust and graduated from elite blockchain fellowships like
-                <strong> Ackee – School of Solana</strong> and <strong> Turbin3 Builders</strong> Cohort.
-                I actively build using the <strong>MERN stack</strong> and have an overview of
-                <strong> AI/ML concepts</strong>.
+                I’ve graduated from elite blockchain fellowships like
+                <strong> Ackee – School of Solana</strong> and <strong> Turbin3</strong> Builders Cohort.
+                I ship across the stack - from <strong>MERN</strong> to low-level
+                <strong> Rust</strong>.
               </p>
-
-              <p>
-                I’m also a student at <strong>100xDevs</strong>, learning to build scalable,
-                production-ready systems with a strong backend-first mindset.
-              </p>
+              <p> Learning to build scalable, production-ready systems with a strong backend-first mindset.</p>
             </section>
 
             {/* GITHUB CALENDAR SECTION */}
@@ -350,34 +341,6 @@ function App() {
                   />
                </div>
             </div>
-            {/* NEW "CURRENT FOCUS" SECTION BENEATH ABOUT */}
-            {/* <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
-              
-              <div className="card" style={{ marginBottom: 0, flex: '1 1 300px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                  <Zap size={20} color="var(--border-color)" />
-                  <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Learning Now</h3>
-                </div>
-                <ul style={{ paddingLeft: '20px', margin: 0, fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '5px' }}>Rust Lang Book</li>
-                  <li style={{ marginBottom: '5px' }}>Rust Atomics and Locks</li>
-                  <li style={{ marginBottom: '5px' }}>Rust for Rustaceans</li>
-                </ul>
-              </div>
-
-              <div className="card" style={{ marginBottom: 0, flex: '1 1 300px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                  <BookOpen size={20} color="var(--border-color)" />
-                  <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Interests</h3>
-                </div>
-                <ul style={{ paddingLeft: '20px', margin: 0, fontSize: '0.9rem' }}>
-                  <li style={{ marginBottom: '5px' }}>Philosophies</li>
-                  <li style={{ marginBottom: '5px' }}>Organizing Cool Stuff</li>
-                  <li style={{ marginBottom: '5px' }}>Sleepinn..zzz</li>
-                </ul>
-              </div>
-              
-            </div> */}
             <div style={{ marginTop: '40px', display: 'flex', justifyContent: 'center' }}>
             <button
               onClick={handleCopy}
