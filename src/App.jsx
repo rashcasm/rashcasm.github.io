@@ -41,7 +41,8 @@ function App() {
       duration: "Jan 2026 - Present",
       location: "Remote",
       details: [
-        "The first rule of it is you don’t talk about it."
+        "Developing and implementing algorithmic strategies.",
+        "Building internal tool to streamline strategy making process."
       ]
     },
     {
