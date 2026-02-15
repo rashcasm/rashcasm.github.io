@@ -56,13 +56,12 @@ function App() {
 
   const experiences = [
     {
-      role: "Algo Trading Intern",
+      role: "SDE Intern (Backend & Algorithms)",
       company: "Stealth Startup",
       duration: "Jan 2026 - Present",
       location: "Remote",
       details: [
-        "Developing and implementing algorithmic strategies.",
-        "Building internal tool to streamline strategy making process.",
+        "Building trading logic and optimizing backend for financial data processing",
       ],
     },
     {
