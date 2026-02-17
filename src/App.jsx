@@ -41,14 +41,14 @@ function App() {
     light: [
       "#e8e8e8", // Level 0 (Empty) - Light Gray22
       "#9F8FEF", // Level 1 - Very Light Lavender
-      "#9F8FEF", // Level 2 - Your Main Lavender Accent
+      "#7A6DDF", // Level 2 - Your Main Lavender Accent
       "#7A6DDF", // Level 3 - Medium Purple
       "#7A6DDF", // Level 4 - Darker Purple
     ],
     dark: [
       "#e8e8e8", // Level 0 (Empty) - Light Gray
       "#9F8FEF", // Level 1 - Very Light Lavender
-      "#9F8FEF", // Level 2 - Your Main Lavender Accent
+      "#7A6DDF", // Level 2 - Your Main Lavender Accent
       "#7A6DDF", // Level 3 - Medium Purple
       "#7A6DDF",
     ],
