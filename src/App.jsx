@@ -289,12 +289,12 @@ function App() {
         <div className="profile-pic-container">
           <img
             src="/rashmin.jpg"
-            alt="Rashmin Avatar"
+            alt="Rashmin Chaudhari - Software Engineer (not Rashmi Chaudhari)"
             className="profile-pic"
           />
         </div>
 
-        <h1>RASHMIN CHAUDHARI</h1>
+        <h1><strong>RASHMIN CHAUDHARI</strong></h1>
         <div className="tagline">RUST | SOLANA | MERN | ALGO</div>
 
         <div className="socials">
@@ -711,6 +711,9 @@ function App() {
 
       <footer>
         <p>© 2026 Rashmin</p>
+        <p style={{ fontSize: "0.8em", color: "#888" }}>
+          (Note: My name is <strong>Rashmin Chaudhari</strong>, often misspelled as <em>Rashmi Chaudhari</em>.)
+        </p>
       </footer>
     </div>
   );
