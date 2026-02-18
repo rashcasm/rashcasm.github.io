@@ -373,8 +373,8 @@ function App() {
             >
               <p>
                 I’m a 3rd-year Computer Science & Business Systems and 100xDevs
-                student currently working as{" "}
-                <strong>Algo Trading Intern</strong> at a stealth startup.
+                student currently working as
+                <strong> SDE Intern (Algorithms)</strong> at a stealth startup.
               </p>
               <p>
                 I’ve graduated from elite blockchain fellowships like
