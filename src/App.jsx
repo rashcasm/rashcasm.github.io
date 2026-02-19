@@ -330,11 +330,11 @@ function App() {
           >
             <Send size={20} />
           </a>
-          <a href="mailto:rashmin9c@gmail.com" className="icon-btn">
+          <a href="mailto:rashmin.work@gmail.com" className="icon-btn">
             <Mail size={20} />
           </a>
           <a
-            href="/resume_feb.pdf"
+            href="/resume_feb2.pdf"
             download="Rashmin_Resume.pdf"
             className="icon-btn"
           >
