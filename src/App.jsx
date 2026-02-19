@@ -62,6 +62,7 @@ function App() {
       location: "Remote",
       details: [
         "Building trading logic and optimizing backend for financial data processing",
+        "Created SEO-Optimized, website for the company using React.",
       ],
     },
     {
