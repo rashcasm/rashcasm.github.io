@@ -335,7 +335,7 @@ function App() {
             <Mail size={20} />
           </a>
           <a
-            href="/resume_feb_v1.pdf"
+            href="/resume_feb_v2.pdf"
             download="Rashmin_Resume.pdf"
             className="icon-btn"
           >
