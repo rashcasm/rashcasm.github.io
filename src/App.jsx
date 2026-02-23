@@ -57,9 +57,9 @@ function App() {
   const experiences = [
     {
       role: "SDE Intern (Backend & Algorithms)",
-      company: "Stealth Startup",
+      company: "Stealth FinTech Startup",
       duration: "Jan 2026 - Present",
-      location: "Remote",
+      location: "Remote (Hyderabad)",
       details: [
         "Building trading logic and optimizing backend for financial data processing",
         "Created SEO-Optimized, website for the company using React.",
@@ -67,10 +67,10 @@ function App() {
     },
     {
       role: "Co-Founder",
-      company: "Ekonos",
-      duration: "Oct 2025 - Jan 2026",
-      location: "Remote",
-      details: ["Own your assets in partnership on Solana."],
+      company: "epocH",
+      duration: "Dec 2025 - Present",
+      location: "Remote (Nagpur)",
+      details: ["Whether you need high-scale Web2 infrastructure, automated Python trading pipelines, or systems built close to the metal, we ship production-ready code."],
     },
   ];
   // Categorized Skills Data
