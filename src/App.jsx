@@ -70,7 +70,7 @@ function App() {
       company: "Daemons Build",
       duration: "Jan 2026 - Present",
       location: "Remote (Nagpur)",
-      details: ["https://daemonsbuild.com",
+      details: ["https://daemonsbuild.me",
         "Whether you need high-scale Web2 infrastructure, automated Python trading pipelines, or systems built close to the metal, we ship production-ready code."],
     },
   ];
