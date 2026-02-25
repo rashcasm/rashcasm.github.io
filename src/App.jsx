@@ -67,10 +67,11 @@ function App() {
     },
     {
       role: "Co-Founder",
-      company: "epocH",
-      duration: "Dec 2025 - Present",
+      company: "Daemons Build",
+      duration: "Jan 2026 - Present",
       location: "Remote (Nagpur)",
-      details: ["Whether you need high-scale Web2 infrastructure, automated Python trading pipelines, or systems built close to the metal, we ship production-ready code."],
+      details: ["https://daemonsbuild.com",
+        "Whether you need high-scale Web2 infrastructure, automated Python trading pipelines, or systems built close to the metal, we ship production-ready code."],
     },
   ];
   // Categorized Skills Data
