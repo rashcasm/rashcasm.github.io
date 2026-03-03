@@ -57,12 +57,12 @@ function App() {
   const experiences = [
     {
       role: "SDE Intern (Backend & Algorithms)",
-      company: "Stealth FinTech Startup",
+      company: "AimFi Capital",
       duration: "Jan 2026 - Present",
       location: "Remote (Hyderabad)",
       details: [
-        "Building trading logic and optimizing backend for financial data processing",
-        "Created SEO-Optimized, website for the company using React.",
+        "Building and implementing trading logic and algorithmic strategies.",
+        "Fetching and processing stock market data to evaluate and optimize strategy performance.",
       ],
     },
     {
