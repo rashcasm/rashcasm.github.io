@@ -148,6 +148,16 @@ function App() {
   ];
 
   const projects = [
+        {
+      title: "QuantLabs",
+      tech: "Python, MERN",
+      year: "2026",
+      link: "https://github.com/rashcasm/",
+      details: [
+        "Built a high-performance execution engine processing historical OHLCV data to calculate institutional risk metrics including Sharpe Ratio and Max Drawdown.",
+        "Implemented an automated portfolio rebalancer enforcing strict risk management and proactive options hedging against market volatility (using market sentiments)",
+      ],
+    },
     {
       title: "Ekonos",
       tech: "Rust, Solana, Anchor",
