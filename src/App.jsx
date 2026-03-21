@@ -396,7 +396,7 @@ function App() {
               <p>
                 I’m a 3rd-year Computer Science & Business Systems and 100xDevs
                 student currently working as
-                <strong> SDE Intern (Algorithms)</strong> at a stealth startup.
+                <strong> SDE Intern (Algorithms)</strong> and<strong> Quant Intern</strong> at startups.
               </p>
               <p>
                 I’ve graduated from elite blockchain fellowships like
