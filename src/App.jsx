@@ -56,6 +56,16 @@ function App() {
 
   const experiences = [
     {
+      role: "Quant Intern",
+      company: "WIN Capital Operating",
+      duration: "March 2026 - Present",
+      location: "Remote",
+      details: [
+        "Own the backtesting engine end-to-end.",
+        "Develop and integrate quantitative strategy logic.",
+      ],
+    },
+    {
       role: "SDE Intern (Backend & Algorithms)",
       company: "AimFi Capital",
       duration: "Jan 2026 - Present",
