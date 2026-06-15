@@ -61,8 +61,8 @@ function App() {
       duration: "March 2026 - Present",
       location: "Remote",
       details: [
-        "Own the backtesting engine end-to-end.",
-        "Develop and integrate quantitative strategy logic.",
+        "Building end-to-end data infrastructure and automated pipelines for ingesting and processing multi-market equity data.",
+        "Researching and backtesting systematic trading strategies using technical indicators; documenting performance metrics and drawdown analysis; translating quantitative hypotheses into testable models.",
       ],
     },
     {
@@ -71,8 +71,8 @@ function App() {
       duration: "Jan 2026 - Present",
       location: "Remote (Hyderabad)",
       details: [
-        "Building and implementing trading logic and algorithmic strategies.",
-        "Fetching and processing stock market data to evaluate and optimize strategy performance.",
+        "Built a real-time screening engine processing 2200+ NSE & BSE equities for 8+ technical pattern types using Python.",
+        "Delivered ranked watchlists of equities to support discretionary trading decisions, including breakouts, trendline analysis, bullish & bearish divergence signals.",
       ],
     },
     {
@@ -356,7 +356,7 @@ function App() {
             <Mail size={20} />
           </a>
           <a
-            href="/resume_april_2026.pdf"
+            href="/resume_may.pdf"
             download="Rashmin_Resume.pdf"
             className="icon-btn"
           >
