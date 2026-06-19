@@ -317,7 +317,7 @@ function App() {
         </div>
 
         <h1><strong>RASHMIN CHAUDHARI</strong></h1>
-        <div className="tagline">RUST | SOLANA | MERN | ALGO</div>
+        <div className="tagline">MERN | ALGO-TRADING | FINTECH | RUST</div>
 
         <div className="socials">
           <a
